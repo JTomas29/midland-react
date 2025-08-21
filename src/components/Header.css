@@ -1,0 +1,60 @@
+/* Reset básico */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container p {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #f1ebeb;
+}
+
+#main-logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Header */
+#main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.5rem; 
+    background-color: rgb(15, 15, 15);
+    border-bottom: 1px solid #080808;
+}
+
+/* Navbar */
+.navbar-lista {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-item a:hover {
+    background: #fff;
+    color: black;
+}

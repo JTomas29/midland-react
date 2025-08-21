@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-container {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.logo-container p {
+font-size: 24px;
+font-weight: bold;
+font-family: 'Arial', sans-serif;
+color: #f1ebeb;
+}
+body{
+    background-image: url('../img/fondo.jpg');
+     background-size: cover; 
+     background-repeat: no-repeat;
+     background-position: center;
+}
+#main-logo{
+    width: 120px;
+    height: auto;
+}
+#main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.5rem; 
+    background-color: rgb(15, 15, 15);
+    border-bottom: 1px solid #080808;
+}
+.navbar-lista{
+   list-style: none; /*saca las viñetas*/
+   display: flex; /*los pone uno al lado de otro */
+   gap: 1.5rem; /* separación entre ítems */
+   margin: 0;
+   padding: 0;
+}
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px; /* padding base para evitar movimiento en hover */
+    border-radius: 15px; /* borde redondeado fijo */
+    transition: color 0.3s ease;
+}
+.navbar-item a:hover {
+    background: #fff;
+    color: black;
+}
+
+main {
+    padding: 2rem;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* -------- Cards -------- */
+.card-Container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+/* ----- Estilo base de cada card ----- */
+.card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* ----- Imagen ocupando todo el fondo de la card ----- */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ----- Botón centrado sobre la imagen ----- */
+.card .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #000;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+/*Beneficios Socios*/
+.beneficios {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fdfcfc;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.beneficio {
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(218, 215, 215, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.beneficio:hover {
+    transform: translateY(-6px);
+}
+
+.beneficio h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #bebebe;
+}
+
+.beneficio p {
+    font-size: 1rem;
+    color: #929090;
+}
+
+/*Cartel socio*/
+#socio-cartel {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #111;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 999;
+    animation: fadeIn 0.5s ease-in;
+}
+
+#socio-cartel .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #fff;
+    color: #111;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* El botón ocupa toda la fila debajo de las dos columnas */
+.beneficio-btn-container {
+    grid-column: 1 / -1; /* Esto hace que ocupe las 2 columnas */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #000;
+}
+
+/* Wrapper para el contenido principal */
+.wrapper {
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+/* Footer */
+.footer {
+width: 100%;
+background-color: #111;
+color: #fff;
+text-align: center;
+padding: 30px 20px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.footer .social-icon,
+.footer .menuFoot {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.footer .icon {
+font-size: 26px;
+color: #fff;
+transition: color 0.3s ease;
+}
+
+.footer .icon:hover {
+color: #ffcc00;
+}
+
+.footer .menu-icon {
+font-size: 16px;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.footer .menu-icon:hover {
+color: #ffcc00;
+}
+
+.footer .textFoot {
+font-size: 14px;
+}
+
+.footer .textFoot a {
+color: #ffcc00;
+text-decoration: none;
+}
+
+.footer .textFoot a:hover {
+text-decoration: underline;
+}

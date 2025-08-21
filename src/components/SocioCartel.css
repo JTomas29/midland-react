@@ -1,0 +1,68 @@
+/* Contenedor principal del cartel */
+#socio-cartel,
+.cartel-contenido {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000000;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  z-index: 9999;
+  text-align: center;
+  width: 320px;
+  animation: aparecer 0.5s ease-in-out;
+}
+
+/* Título del cartel */
+#socio-cartel h2,
+.cartel-contenido h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+#socio-cartel .btn,
+.cartel-contenido .btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #fff;
+  color: #111;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#socio-cartel .btn:hover,
+.cartel-contenido .btn:hover {
+  background: #ffdddd;
+  transform: scale(1.05);
+}
+
+/* Botón de cerrar */
+.cerrar-cartel {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.cerrar-cartel:hover {
+  color: #ffdddd;
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+  from { opacity: 0; transform: translate(-50%, -40%); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
+}
