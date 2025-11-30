@@ -1,35 +1,51 @@
+/* ========== FONDO PRINCIPAL UNIFICADO ========== */
+.elclub-main {
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  padding-bottom: 40px;
+}
+
+/* ========== SECCIÓN PRINCIPAL ========== */
 .elclub-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espacio entre la imagen y el texto */
+    gap: 10px;
     padding: 40px;
-    background-color: black;
-    color:white;
+    color: white;
 }
+
 .elclub-img{
-    flex:1;
+    flex: 1;
 }
+
 .elclub-imagen{
     width: 80%;
     height: auto;
     border-radius: 10px;
 }
+
 .elclub-texto{
     flex: 1.5;
 }
+
 .midland-tittler{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
     margin-bottom: 10px;
 }
+
 .midland-subtitle{
-    font-size: 32px;
+    font-size: 52px;
     margin-bottom: 20px;
-     color: #0a06dd;
+    color: #0e0d41;
 }
+
 .mid-desc{
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.6;
 }
 
@@ -40,7 +56,7 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
-  background: rgb(0, 0, 0);
+  color: white; 
 }
 
 .hito {
@@ -61,13 +77,13 @@
 }
 
 .hito-texto {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .hito-texto h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #0a06dd;
+  color: #080655;
 }
 
 .hito-texto p {
@@ -75,7 +91,7 @@
   color: #ffffff;
 }
 
-/* ANIMACIÓN HOVER PARA TODAS LAS IMÁGENES */
+/* ========== ANIMACIONES HOVER ========== */
 
 .elclub-imagen,
 .hito-img img {
@@ -88,8 +104,6 @@
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
 }
-
-
 
 /* ========== RESPONSIVE ========== */
 

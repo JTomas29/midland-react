@@ -27,7 +27,7 @@ export default function Homes() {
         <article className="card">
           <img src={Tienda} alt="Tienda oficial" className="card-img" />
           <div className="card-content">
-            <Link to="/tienda" className="btn">Tienda</Link>
+            <Link to="/tienda" className="btn">Hacete Socio</Link>
           </div>
         </article>
       </section>

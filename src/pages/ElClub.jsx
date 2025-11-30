@@ -6,9 +6,10 @@ import MidlandAscenso2023 from "../img/AscensoPrimeraB2023.jpg";
 import Midland2009 from "../img/MidlandCampeon2009.jpg";
 import Midland89 from "../img/Ascenso1989.jpg";
 import Midland1968 from "../img/MidlandCampeon1968.jpg";
+
 export default function ElClub() {
   return (
-    <>
+    <main className="elclub-main">
       {/* SECCIÓN PRINCIPAL */}
       <section className="elclub-container">
         <div className="elclub-img">
@@ -98,7 +99,7 @@ export default function ElClub() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
 
