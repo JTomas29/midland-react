@@ -26,6 +26,7 @@
 .midland-subtitle{
     font-size: 32px;
     margin-bottom: 20px;
+     color: #0a06dd;
 }
 .mid-desc{
   font-size: 18px;
@@ -66,12 +67,26 @@
 .hito-texto h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #0a06dd;
 }
 
 .hito-texto p {
   line-height: 1.6;
   color: #ffffff;
+}
+
+/* ANIMACIÓN HOVER PARA TODAS LAS IMÁGENES */
+
+.elclub-imagen,
+.hito-img img {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.elclub-imagen:hover,
+.hito-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
 }
 
 
