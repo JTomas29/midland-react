@@ -1,0 +1,108 @@
+.elclub-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    padding: 40px;
+    background-color: black;
+    color:white;
+}
+.elclub-img{
+    flex:1;
+}
+.elclub-imagen{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+.elclub-texto{
+    flex: 1.5;
+}
+.midland-tittler{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.midland-subtitle{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.mid-desc{
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ========== SECCIÓN DE HITOS ========== */
+
+.hitos-container {
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: rgb(0, 0, 0);
+}
+
+.hito {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hito.reverse {
+  flex-direction: row-reverse;
+}
+
+.hito-img img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+}
+
+.hito-texto {
+  max-width: 600px;
+}
+
+.hito-texto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.hito-texto p {
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 900px) {
+  .elclub-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .elclub-img,
+  .elclub-texto {
+    width: 100%;
+  }
+
+  .hito {
+    flex-direction: column;
+  }
+
+  .hito.reverse {
+    flex-direction: column;
+  }
+
+  .hito-img img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .hito-texto {
+    text-align: center;
+  }
+}

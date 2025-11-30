@@ -10,8 +10,12 @@ export default function Header() {
         <img id="main-logo" src={LogoMid} alt="Logo" />
         <p>FERROCARRIL MIDLAND</p>
       </div>
+
       <nav id="main-navbar">
         <ul className="navbar-lista">
+          <li className="navbar-item">
+            <Link to="/">Inicio</Link>
+          </li>
           <li className="navbar-item">
             <Link to="/institucional">Institucional</Link>
           </li>
@@ -19,13 +23,12 @@ export default function Header() {
             <Link to="/el-club">El Club</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/tienda">Tienda</Link>
-          </li>
-          <li className="navbar-item">
             <Link to="/hacete-socio">Hacete Socio</Link>
           </li>
         </ul>
       </nav>
+      
     </header>
   );
 }
+
