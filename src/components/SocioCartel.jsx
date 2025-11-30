@@ -4,15 +4,15 @@ import "./SocioCartel.css";
 
 export default function SocioCartel() {
   const [mostrar, setMostrar] = useState(false);
+  const [cerrando, setCerrando] = useState(false);
 
   useEffect(() => {
-    // Mostrar a los 2 segundos
+    
     const timerMostrar = setTimeout(() => {
       setMostrar(true);
-
-      // Ocultar a los 10 segundos
-      const timerOcultar = setTimeout(() => {
-        setMostrar(false);
+    
+    const timerOcultar = setTimeout(() => {
+        iniciarCierre();
       }, 10000);
 
       return () => clearTimeout(timerOcultar);
@@ -21,16 +21,19 @@ export default function SocioCartel() {
     return () => clearTimeout(timerMostrar);
   }, []);
 
-  if (!mostrar) return null; 
+  // Función que activa la animación y luego oculta el cartel
+  const iniciarCierre = () => {
+    setCerrando(true);
+    setTimeout(() => {
+      setMostrar(false);
+    }, 1000); // tiempo de la animación
+  };
+
+  if (!mostrar) return null;
 
   return (
-    <div className="cartel-contenido">
-      <button
-        className="cerrar-cartel"
-        onClick={() => setMostrar(false)}
-      >
-        ✖
-      </button>
+    <div className={`cartel-contenido ${cerrando ? "cerrando" : ""}`}>
+      <button className="cerrar-cartel" onClick={iniciarCierre}>✖</button>
       <h2>¡Hacete Socio Hoy!</h2>
       <Link to="/formulario-socio" className="btn">Unirme</Link>
     </div>
