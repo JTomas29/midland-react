@@ -26,7 +26,7 @@ export default function ElClub() {
           
           <p className="mid-desc">
             El Club Ferrocarril Midland, fundado en 1914, es una institución deportiva y social con una rica historia en la comunidad de Libertad, Buenos Aires. A lo largo de los años, el club ha sido un pilar fundamental para el desarrollo del deporte y la cultura en la región.
-            El club ofrece una amplia gama de actividades deportivas, incluyendo fútbol, rugby, hockey, natación y tenis, entre otros. Además de sus instalaciones deportivas de primer nivel, el club cuenta con espacios sociales donde los miembros pueden reunirse, celebrar eventos y disfrutar de diversas actividades recreativas.
+            El club ofrece una amplia gama de actividades deportivas, incluyendo fútbol, natación, entre otros. Además de sus instalaciones deportivas de primer nivel, el club cuenta con espacios sociales donde los miembros pueden reunirse, celebrar eventos y disfrutar de diversas actividades recreativas.
             La misión del Club Ferrocarril Midland es promover el deporte y la vida saludable, fomentando valores como el trabajo en equipo, la disciplina y el respeto. A lo largo de su historia, el club ha formado a numerosos deportistas y ha dejado una marca significativa en su comunidad.
           </p>
         </div>
